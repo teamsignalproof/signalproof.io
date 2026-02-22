@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SignalProof — Become the Brand AI Recommends</title>
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400&display=swap" rel="stylesheet">
 
 /* ── TOKENS ─────────────────────────────────────────── */
 :root {
@@ -14,7 +14,7 @@
   --mint:       #d1e6d2;
   --black:      #1a1a1a;
   --white:      #fafafa;
-  --mid:        #6b7c87;
+  --mid:        #1a1a1a;
   --border:     rgba(51,64,73,0.12);
   --serif:      Helvetica, Arial, sans-serif;
   --heading: Helvetica, Arial, sans-serif;
@@ -41,7 +41,7 @@ body {
 
 .label {
   font-family: var(--serif);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -69,27 +69,41 @@ nav {
 }
 
 .wordmark {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.footer-wordmark {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.85;
 }
 
 .logo-img {
   height: 28px;
   width: auto;
   display: block;
+  filter: invert(1);
 }
 
 .logo-light {
   height: 24px;
-  opacity: 0.8;
+  filter: none;
+  opacity: 0.9;
 }
 
 .nav-cta {
   background: var(--slate);
   color: var(--white);
   font-family: var(--serif);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   padding: 10px 22px;
   border-radius: 6px;
@@ -135,6 +149,17 @@ nav {
   padding: 0 32px;
 }
 
+.hero-icon {
+  margin-bottom: 28px;
+}
+
+.hero-icon-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -155,7 +180,7 @@ nav {
 
 .badge-text {
   font-family: var(--serif);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -211,7 +236,7 @@ h1 em {
 
 .btn-ghost {
   font-family: var(--serif);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--slate);
   text-decoration: none;
@@ -234,7 +259,7 @@ h1 em {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--mid);
 }
 
@@ -246,7 +271,7 @@ h1 em {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 16px;
   flex-shrink: 0;
 }
 
@@ -295,7 +320,7 @@ h1 em {
 .problem-body {
   font-size: 16px;
   line-height: 1.75;
-  color: rgba(250,250,250,0.65);
+  color: rgba(250,250,250,0.9);
   font-weight: 400;
 }
 
@@ -325,8 +350,8 @@ h1 em {
 }
 
 .stat-label {
-  font-size: 14px;
-  color: rgba(250,250,250,0.6);
+  font-size: 16px;
+  color: rgba(250,250,250,0.88);
   line-height: 1.5;
 }
 
@@ -387,7 +412,7 @@ h1 em {
 
 .pillar-tag {
   font-family: var(--serif);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -404,7 +429,7 @@ h1 em {
 }
 
 .pillar-subtitle {
-  font-size: 13px;
+  font-size: 15px;
   opacity: 0.6;
   margin-bottom: 32px;
   font-weight: 400;
@@ -421,11 +446,11 @@ h1 em {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
-.pillar-signal .pillar-items li { color: rgba(250,250,250,0.8); }
+.pillar-signal .pillar-items li { color: rgba(250,250,250,0.95); }
 .pillar-proof .pillar-items li { color: var(--mid); }
 
 .pillar-bullet {
@@ -480,7 +505,7 @@ h1 em {
 }
 
 .tool-card p {
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--mid);
   line-height: 1.6;
 }
@@ -512,7 +537,7 @@ h1 em {
 
 .week-number {
   font-family: var(--serif);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -530,14 +555,14 @@ h1 em {
 }
 
 .week p {
-  font-size: 13px;
-  color: rgba(250,250,250,0.6);
+  font-size: 15px;
+  color: rgba(250,250,250,0.88);
   line-height: 1.6;
 }
 
 .week-outcome {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 16px;
   font-family: var(--serif);
   font-weight: 600;
   color: var(--blue);
@@ -583,7 +608,7 @@ h1 em {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--mid);
   line-height: 1.55;
 }
@@ -597,7 +622,7 @@ h1 em {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 10px;
+  font-size: 16px;
   color: var(--slate);
   font-weight: 700;
   margin-top: 1px;
@@ -612,7 +637,7 @@ h1 em {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 10px;
+  font-size: 16px;
   color: #c0392b;
   font-weight: 700;
   margin-top: 1px;
@@ -661,7 +686,7 @@ h1 em {
   background: var(--mint);
   color: var(--slate);
   font-family: var(--serif);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -672,7 +697,7 @@ h1 em {
 
 .pricing-name {
   font-family: var(--serif);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -680,24 +705,40 @@ h1 em {
   margin-bottom: 12px;
 }
 
+.pricing-price-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.pricing-was {
+  font-size: 36px;
+  font-weight: 400;
+  color: rgba(250,250,250,0.35);
+  text-decoration: line-through;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
 .pricing-price {
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-size: 72px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   color: var(--white);
   line-height: 1;
-  margin-bottom: 4px;
 }
 
 .pricing-price sup {
   font-size: 32px;
   vertical-align: super;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .pricing-note {
-  font-size: 13px;
+  font-size: 15px;
   color: rgba(250,250,250,0.5);
   margin-bottom: 36px;
 }
@@ -715,8 +756,8 @@ h1 em {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 14px;
-  color: rgba(250,250,250,0.8);
+  font-size: 16px;
+  color: rgba(250,250,250,0.95);
 }
 
 .pricing-includes .check {
@@ -743,7 +784,7 @@ h1 em {
 
 .pricing-guarantee {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(250,250,250,0.4);
   position: relative;
   z-index: 1;
@@ -791,7 +832,7 @@ h1 em {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--slate);
   flex-shrink: 0;
   font-weight: 700;
@@ -800,7 +841,7 @@ h1 em {
 
 .faq-a {
   padding: 0 28px 22px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--mid);
   line-height: 1.7;
 }
@@ -841,7 +882,7 @@ h1 em {
 
 .cta-section p {
   font-size: 16px;
-  color: rgba(250,250,250,0.6);
+  color: rgba(250,250,250,0.88);
   margin-bottom: 44px;
   max-width: 420px;
   margin-left: auto;
@@ -857,7 +898,7 @@ h1 em {
 
 .cta-sub {
   margin-top: 16px;
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(250,250,250,0.35);
 }
 
@@ -875,14 +916,11 @@ footer {
   gap: 16px;
 }
 
-.footer-wordmark {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
+
+
 
 .footer-copy {
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(250,250,250,0.3);
 }
 
@@ -892,7 +930,7 @@ footer {
 }
 
 .footer-links a {
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(250,250,250,0.4);
   text-decoration: none;
 }
@@ -933,9 +971,7 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a class="wordmark" href="#">
-      <img src="signal_proof_black_horizontal.png" alt="SignalProof" class="logo-img">
-    </a>
+    <a class="wordmark" href="#">Signal Proof</a>
     <a class="nav-cta" href="#pricing">Get the Hub — £147</a>
   </div>
 </nav>
@@ -945,6 +981,9 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-inner">
+    <div class="hero-icon">
+      <img src="sp-white.png" alt="" class="hero-icon-img">
+    </div>
     <div class="hero-badge">
       <div class="badge-dot"></div>
       <span class="badge-text">AI Engine Optimisation for E-Commerce</span>
@@ -953,7 +992,7 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
     <p class="hero-sub">SignalProof is a 30-day operating system that makes your store the easiest, most trustworthy brand for AI to recommend. Clear structure. Strong proof. Built to compound.</p>
     <div class="hero-actions">
       <a href="#pricing" class="btn-primary">Get the Implementation Hub — £147</a>
-      <a href="#what-is-it" class="btn-ghost">See what's inside →</a>
+      <a href="#what-is-it-section" class="btn-ghost">See what's inside →</a>
     </div>
     <div class="hero-proof">
       <div class="proof-item">
@@ -1044,7 +1083,7 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
 </section>
 
 <!-- WHAT'S INSIDE -->
-<section class="whats-inside" id="inside">
+<section class="whats-inside" id="what-is-it-section">
   <div class="container">
     <div class="section-header">
       <span class="label">What's Inside</span>
@@ -1167,8 +1206,11 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
     <div class="pricing-card">
       <div class="pricing-badge">Early Adopter Price</div>
       <div class="pricing-name">SignalProof Implementation Hub</div>
-      <div class="pricing-price"><sup>£</sup>147</div>
-      <div class="pricing-note">One-time payment · Instant access · Price rising to £297</div>
+      <div class="pricing-price-row">
+        <div class="pricing-price"><sup>£</sup>147</div>
+        <div class="pricing-was"><sup>£</sup>297</div>
+      </div>
+      <div class="pricing-note">One-time payment · Instant access · Early adopter price</div>
       <ul class="pricing-includes">
         <li><div class="check">✓</div>Complete Notion workspace — yours to duplicate and edit</li>
         <li><div class="check">✓</div>30-Day Sprint Board with 4 weeks of structured tasks</li>
@@ -1229,7 +1271,7 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
       <h2>Become the brand AI can confidently recommend.</h2>
       <p>30 days. Real changes. A system you can run every month.</p>
       <a href="#pricing" class="btn-buy">Get the Hub — £147</a>
-      <p class="cta-sub">Early adopter price · Rising to £297 · One-time payment</p>
+      <p class="cta-sub">Early adopter price · One-time payment</p>
     </div>
   </div>
 </section>
@@ -1238,9 +1280,7 @@ h1           { animation: fadeUp 0.5s 0.1s ease both; }
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <a class="footer-wordmark" href="#">
-        <img src="signal_proof_white_horizontal.png" alt="SignalProof" class="logo-img logo-light">
-      </a>
+      <a class="footer-wordmark" href="#">Signal Proof</a>
       <p class="footer-copy">© 2025 SignalProof. All rights reserved.</p>
       <div class="footer-links">
         <a href="#">Privacy</a>
